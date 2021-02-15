@@ -27,9 +27,6 @@ class UserEditForm(FlaskForm):
     header_image_url = StringField('(Optional) Header Image URL')
     image_url = StringField('(Optional) Image URL')
      
-
-
-
 class LoginForm(FlaskForm):
     """Login form."""
 
