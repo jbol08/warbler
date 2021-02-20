@@ -51,6 +51,11 @@ class MessageViewTestCase(TestCase):
 
         db.session.commit()
 
+    def tearDown(self):
+        res = super().tearDown()
+        db.session.rollback
+        return res
+
     def test_add_message(self):
         """Can use add a message?"""
 
